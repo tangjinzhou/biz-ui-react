@@ -6,7 +6,7 @@ function Icon(props) {
     const {prefixCls, type, className, size, spin, fixedWidth, style, color} = props;
     const iconClass = classNames({
         [`${prefixCls}`]: true,
-        [`${prefixCls}-${size}`]: size === 'lg' || size === '2x' || size === '3x' || size === '4x' || size === '5x',
+        [`${prefixCls}-${size}`]: true,
         [`${prefixCls}-spin`]: spin,
         [`${prefixCls}-fw`]: fixedWidth,
         [className]: true,
