@@ -4,6 +4,7 @@ import * as React from 'react';
 import {
     Button,
     Icon,
+    colors
 } from '../src/index'
 
 const styles = {
@@ -30,8 +31,8 @@ export default class App extends React.Component {
                 <Icon type="perm_identity" size="2x"/>
                 <Icon type="perm_identity" size="3x"/>
                 <Icon type="perm_identity" size="4x"/>
-                <Icon type="perm_identity" size="5x" color="#2196F3"/>
-                <Icon type="cached" size="5x" spin/>
+                <Icon type="perm_identity" size="5x" color={colors.blue_500}/>
+                <Icon type="cached" size="5x" spin color={colors.red_500}/>
             </div>
         );
     }
