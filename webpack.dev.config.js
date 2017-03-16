@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require("path");
 var nodeModulesPath = path.join(__dirname, 'node_modules');
-var port = 3000;
+var port = 3333;
 var devConfigExtension = {
     port: port,
     cache: true,
@@ -38,7 +38,7 @@ var devConfigExtension = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel',
+                loaders: ['babel', 'eslint'],
             }
         ]
     },

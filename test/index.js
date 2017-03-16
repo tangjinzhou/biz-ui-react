@@ -7,9 +7,6 @@ import {
     colors
 } from '../src/index'
 
-const styles = {
-
-}
 export default class App extends React.Component {
 
     commonFunc = (...args) => {
